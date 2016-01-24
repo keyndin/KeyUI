@@ -23,6 +23,7 @@ local addon_name = "KeyUI";
 ---------------------------------------------------------------------------------------
 
 function KeyUI:OnInitialize()
+  self.db = LibStub("AceDB-3.0"):New("KeyUIDB")
   KeyUI:Print("Addon loaded");
 end
 
@@ -67,4 +68,4 @@ function KeyUI:SetMyMessage(info, input)
     myMessageVar = input
 end
 
-LibStub("AceConfig-3.0"):RegisterOptionsTable(addon_name, options, {"keyui", "kui"})
+LibStub("AceConfig-3.0"):RegisterOptionsTable(addon_name, options, nil)
