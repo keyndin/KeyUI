@@ -1,0 +1,6 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+  <Script file="aurahandling.lua"/>
+  <Script file="border.lua"/>
+  <Script file="tags.lua"/>
+  <Script file="core.lua"/>
+</Ui>
