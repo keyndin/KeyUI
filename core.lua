@@ -24,7 +24,7 @@ local addon_name = "KeyUI";
 
 function KeyUI:OnInitialize()
   self.db = LibStub("AceDB-3.0"):New("KeyUIDB")
-  KeyUI:Print("Addon loaded");
+  KeyUI:Print("AddOn loaded");
 end
 
 
@@ -32,13 +32,13 @@ end
 -- Slash commands
 ---------------------------------------------------------------------------------------
 
--- KeyUI:RegisterChatCommand(addon_name, "SlashProcessor")
+KeyUI:RegisterChatCommand(addon_name, "SlashProcessor")
 
 
--- function KeyUI:SlashProcessor(input)
---   KeyUI:Print(string.format("You said: \"%s\".", input));
---   -- string.format("%s %q", "Hello", "Lua user!")
--- end
+function KeyUI:SlashProcessor(input)
+  KeyUI:Print(string.format("You said: \"%s\".", input));
+  string.format("%s %q", "Hello", "Lua user!")
+end
 
 
 ---------------------------------------------------------------------------------------
