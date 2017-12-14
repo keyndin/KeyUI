@@ -1,3 +1,6 @@
 [submodule "libs/WoW-Ace3"]
 	path = libs/WoW-Ace3
 	url = https://github.com/hurricup/WoW-Ace3
+[submodule "libs/oUF"]
+	path = libs/oUF
+	url = https://github.com/oUF-wow/oUF
