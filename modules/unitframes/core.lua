@@ -18,9 +18,9 @@ local HealthThresholds = {
 local updateName = function(self, event, unit)
 	if(self.unit == unit) then
 		local r, g, b, t
-		if(UnitIsTapped(unit) and not UnitIsTappedByPlayer(unit) or not UnitIsConnected(unit)) then
-			r, g, b = .6, .6, .6
-		elseif(UnitIsPlayer(unit)) then
+		-- if(UnitIsTapped(unit) and not UnitIsTappedByPlayer(unit) or not UnitIsConnected(unit)) then
+		-- 	r, g, b = .6, .6, .6
+		if(UnitIsPlayer(unit)) then
 			local _, class = UnitClass(unit)
 			t = self.colors.class[class]
 		else

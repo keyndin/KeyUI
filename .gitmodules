@@ -1,0 +1,3 @@
+[submodule "libs/WoW-Ace3"]
+	path = libs/WoW-Ace3
+	url = https://github.com/hurricup/WoW-Ace3
